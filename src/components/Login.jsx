@@ -25,7 +25,7 @@ const Login = () => {
         .then(res => {
             alert(res.data.message)
             localStorage.setItem("x-api-key",res.data.token)
-            navigate("/profile")
+            navigate("/homepage")
         }).catch(err => {
             alert(err.response.data.message)
         })
